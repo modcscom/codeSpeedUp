@@ -31,11 +31,12 @@ python server.py # 运行服务器后端
 
   ```sh
   cd frontend # 在项目根目录打开 frontend/
-  npm run i # 如果还没安装依赖，先安装
+  npm install # 如果还没安装依赖，先安装
   npm run dev # 如果要部署到服务器，可以 npm run build，然后使用 Nginx 等方法
   ```
 
 部署方法略，比较简单不再赘述。请根据具体情况修改前后端配置文件，如 URL 地址，端口号。(分别是 `frontend/src/config.js` 和 `backend/config.yml`)
+安装测试需要将serverURL: 'http://localhost:5802', 改为自己服务器的ip，没有测试反代
 
 > 前端配置文件参考：(`config.js`)
 >
